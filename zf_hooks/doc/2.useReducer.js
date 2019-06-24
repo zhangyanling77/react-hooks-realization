@@ -1,5 +1,6 @@
 import  React from 'react';
 import ReactDOM from 'react-dom';
+
 let initalArg = 0;
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
@@ -38,7 +39,6 @@ function useReducer(reducer,initalArg,init){
 }
 
 function Counter(){
-    //state={number:0}
     let [state,dispatch] = useReducer(reducer,initalArg,init);
     return (
         <>
